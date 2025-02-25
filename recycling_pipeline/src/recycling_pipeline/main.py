@@ -17,7 +17,7 @@ class ContentFlow(Flow):
 
     @start()
     def process_blog_posts(self):
-        json_path = "/Users/tobiasmaissen/Desktop/RiverflowLabs/Dinotronic/RecPip/recycling_pipeline/src/recycling_pipeline/firecrawl_output/blog_posts.json"
+        json_path = "/Users/tobiasmaissen/Desktop/temp-streamlit-project/recycling_pipeline/src/recycling_pipeline/firecrawl_output/blog_posts.json"
         posts = load_blog_posts(json_path)
         
         for post in posts:
